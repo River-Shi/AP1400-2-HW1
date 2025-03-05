@@ -2,7 +2,6 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 #include "hw1.h"
-
 /*
 TEST(HW1Test, ZEROS) {
     Matrix matrix{algebra::zeros(5, 6)};
