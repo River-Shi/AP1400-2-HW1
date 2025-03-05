@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 #include "hw1.h"
-/*
+
 TEST(HW1Test, ZEROS) {
     Matrix matrix{algebra::zeros(5, 6)};
 
@@ -163,7 +163,6 @@ TEST(HW1Test, TRANSPOSE) {
         for (size_t j{}; j < transpose[i].size(); j++)
             EXPECT_DOUBLE_EQ(transpose[i][j], matrix[j][i]);
 }
-
 TEST(HW1Test, MINOR1) {
     Matrix matrix{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     Matrix minor = algebra::minor(matrix, 1, 2);
@@ -194,6 +193,7 @@ TEST(HW1Test, MINOR2) {
     EXPECT_DOUBLE_EQ(minor[1][1], matrix[2][2]);
 }
 
+/*
 TEST(HW1Test, DETERMINANT1) {
     // Caution: determinant of an empty matrix
     EXPECT_EQ(algebra::determinant(Matrix{}), 1);
@@ -359,7 +359,7 @@ TEST(HW1Test, BONUS) {
     EXPECT_NEAR(res2[2][1], 0, 0.03);
     EXPECT_NEAR(res2[2][2], 39/4.0, 0.03);
 }
-*/
 
+*/
 
 

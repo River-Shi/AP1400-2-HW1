@@ -3,10 +3,9 @@
 #include "hw1.h"
 
 int main(int argc, char **argv) {
-    if (true) // make false to run unit-tests
+    if (false) // make false to run unit-tests
     {
-        Matrix a = algebra::random(3, 3, -10, 10);
-        algebra::show(a);
+        algebra::sum(Matrix{{1, 2, 3}}, Matrix{});
     } else {
         ::testing::InitGoogleTest(&argc, argv);
         std::cout << "RUNNING TESTS ..." << std::endl;

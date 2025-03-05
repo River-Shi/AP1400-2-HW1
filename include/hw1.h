@@ -21,6 +21,10 @@ namespace algebra {
     Matrix sum(const Matrix &matrix, double c);
 
     Matrix sum(const Matrix &matrix1, const Matrix &matrix2);
+
+    Matrix transpose(const Matrix& matrix);
+
+    Matrix minor(const Matrix& matrix, size_t n, size_t m);
 } // namespace algebra
 
 #endif //AP_HW1_H
