@@ -5,7 +5,8 @@
 int main(int argc, char **argv) {
     if (false) // make false to run unit-tests
     {
-        algebra::sum(Matrix{{1, 2, 3}}, Matrix{});
+        Matrix matrix1{{1, 2}, {5, 7}};
+        Matrix res1{algebra::upper_triangular(matrix1)};
     } else {
         ::testing::InitGoogleTest(&argc, argv);
         std::cout << "RUNNING TESTS ..." << std::endl;

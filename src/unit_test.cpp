@@ -193,7 +193,7 @@ TEST(HW1Test, MINOR2) {
     EXPECT_DOUBLE_EQ(minor[1][1], matrix[2][2]);
 }
 
-/*
+
 TEST(HW1Test, DETERMINANT1) {
     // Caution: determinant of an empty matrix
     EXPECT_EQ(algebra::determinant(Matrix{}), 1);
@@ -349,6 +349,7 @@ TEST(HW1Test, UPPER_TRIANGULAR1) {
     EXPECT_NEAR(res2[2][2], 62, 0.03);
 }
 
+
 TEST(HW1Test, BONUS) {
     // test case
     Matrix matrix2{{0, 2, 3}, {4, 7, 5}, {6, 1, 3}};
@@ -360,6 +361,6 @@ TEST(HW1Test, BONUS) {
     EXPECT_NEAR(res2[2][2], 39/4.0, 0.03);
 }
 
-*/
+
 
 
